@@ -1,0 +1,189 @@
+#head{
+        background-color: $primary600;
+        //padding: 17px 20px;
+        position: relative;
+        z-index: 1;
+        height: 60px;
+        box-sizing:border-box;
+        display:flex;
+        .top_icon{
+                width:60px;
+                height:60px;
+                box-sizing:border-box;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                border-right:1px solid #1885C9;
+                img{
+                        margin-top:4px;
+                }
+        }
+        .top_storeselector{
+                width:60px;
+                height:60px;
+                border-right:1px solid #1885C9;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                .storename img{
+                        margin-top:5px;
+                }
+        }
+        .currentstore{
+                height:60px;
+                box-sizing:border-box;
+                margin-left:20px;
+                font-size:18px;
+                font-weight:bold;
+                text-transform: lowercase;
+                line-height:57px;
+                color: white;
+        }
+        .account_block{
+                margin-left:auto;
+                display:flex;
+                padding-right:10px;
+                cursor:pointer;
+                position: relative;
+                padding-top:10px;
+                border-right:1px solid #1885C9;
+                .avatar{
+                        width:36px;
+                        height:36px;
+                        border-radius:12px;
+                        background:#eee;
+                        float:left;
+                }
+                .name_account{
+                        margin-right:10px;
+                        color:#fff;
+                        line-height:36px;
+
+                }
+                span{
+                        display:block;
+                        white-space: nowrap;
+                        line-height:36px;
+                        font-size:14px;
+                        font-weight:500;
+                        margin-right:10px;
+                        color:#fff;
+                        &.account{
+                                font-size:12px;
+                                opacity:0.4;
+                                line-height:12px;
+                        }
+                }
+        }
+        .storeselector,
+        .storeselect{
+                display:flex;
+                flex-direction:column;
+                line-height:33px;
+
+                i{
+                        line-height:40px;
+                        font-size:18px;
+                        color:#fff;
+                        opacity:0.5;
+                }
+                img{margin-top:0px;}
+        }
+        .helpsupport{
+                cursor: pointer;
+                line-height:60px;
+                color: #fff;
+                padding:0 20px 0px 40px;
+                font-size:14px;
+                font-weight:500;
+                color:#fff;
+                a,i{ color:#fff; }
+                i{
+                        position: absolute;
+                        top: 20px;
+                        font-size:17px;
+                        right: 135px;
+                }
+        }
+}
+.dropsubmenu,
+.dropsubmenustores{
+        display:none;
+        opacity:0;
+        position:absolute;
+        transition: opacity 200ms ease;
+        z-index:1000;
+        top:57px;
+        left:-999px;
+        /* Shape: */
+        background: #FFFFFF;
+        border: 1px solid rgba(183,210,229,0.80);
+        box-shadow: 0 1px 4px 0 rgba(43,63,89,0.21);
+        border-radius: 4px;
+
+
+        &.active{
+                display:inherit;
+                opacity:1;
+                left:5px;
+        }
+        > div{
+                list-style:none;
+                display:block;
+                width:100%;
+                a{
+                        font-size:13px;
+                        display:block;
+                        padding:11px;
+                        padding-left:16px;
+                        transition: all 200ms;
+                        color:$font-color;
+
+                        i{ margin-right:11px; color:$font-color; }
+
+                        &.logout{
+                                border-top:$border-color;
+                        }
+
+                        &:hover{
+                                background: $body-bg !important;
+                        }
+                }
+
+        }
+
+}
+.dropsubmenustores{
+        min-width:180px;
+        display:flex;
+        flex-direction: column;
+        span{ font-size:20px; font-weight:500; margin-right:10px; line-height:16px; vertical-align:middle; color:#819FB8 !important;}
+        a{
+                padding:10px 30px 10px 40px;
+                line-height:20px;
+                display: block !important;
+                color:#819FB8 !important;
+                &.active{color:$font-color !important;}
+                &:hover{
+                        background: $body-bg !important;
+                }
+        }
+        a.addstore{
+                padding: 10px 30px 10px 20px;
+                border-top:1px solid #ddd;
+        }
+}
+.dropsubmenu{
+        right:115px;
+        width:150px;
+        opacity:0;
+        transition: opacity 200ms ease;
+        &.active{
+                left:auto;
+                opacity:1;
+        }
+}
+.storeselect{
+        cursor:pointer;
+}

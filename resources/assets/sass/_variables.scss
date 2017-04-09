@@ -1,0 +1,79 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700');
+
+
+
+$primary300: #99c9e8;
+$primary400: #4da1d7;
+$primary500: #268dce;
+$primary600: #0079C5;
+$primary700: #0067a8;
+$primary800: #00548a;
+$primary900: #2C4059;
+$primary999: #001d2f;
+$primary: $primary600;
+$primary-darken: $primary800;
+
+
+
+$text-light: #8DABC4;
+
+$secondary: #4ECE3D;
+$secondary-darken: #007a1c;
+
+$danger-light: #f6c8cd;
+$danger: #f9243d;
+$danger-darken: #b1212f;
+
+$success-light: #d7f3dd;
+$success: #00bb28;
+$success-darken: #007a1c;
+
+$warning-light: #fef4cc;
+$warning: #faca00;
+$warning-darken: #b99200;
+
+$notification: #5f6875;
+
+
+$navigation-background: $primary900;
+// Body
+$body-bg: #ECF5FD;
+$panel-bg: #fff;
+$panel-bg-light: #FAFBFC;
+
+$panel-shadow: #e6e9ed;
+$panel-border-radius: 5px;
+$button-border-radius: 5px;
+$form-border-radius: 2px;
+$white-panel-border: #C5D9E8;
+
+
+$table-header: #FBFBFC;
+$table-border-color: #E5EEF5;
+
+$border-color: #C5DBEA;
+$header-background: #ccc;
+
+$font-color: #262F35;
+$font-color-light: lighten(#262F35,50);
+$font-size-small: 13px;
+
+body{ margin:0 !important; padding:0 !important; }
+*, html, body, p {
+        font-size:13px;
+        font-family: 'Heebo', sans-serif;
+        line-height:22px;
+        -webkit-font-smoothing: antialiased;
+        color:$font-color;
+}
+a{  text-decoration: none;  }
+a.small{  font-size:13px;  }
+a.gray{  color:#ccc;  }
+.a-center{  text-align: center;  }
+
+
+h2.a-center{  width:100%; }
+.a-left{  text-align: left;  }
+.a-right{  text-align: right;  }

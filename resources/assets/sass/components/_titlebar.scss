@@ -1,0 +1,57 @@
+#titlebar{
+        background:$panel-bg-light;
+        border-bottom:1px solid $white-panel-border;
+        display: inline-block;
+        width:100%;
+        box-sizing:border-box;
+        padding: 20px 20px;
+        display:flex;
+
+
+        .titlecontent{
+                -webkit-align-self: flex-start;
+                align-self: flex-start;
+                flex:1;
+        }
+        .actioncontent{
+                margin-left: auto;
+                flex:1;
+                text-align:right;
+        }
+        .avatar{
+                float:left;
+                width:48px;
+                height:48px;
+                border-radius:12px;
+               // background:#ccc;
+                margin-right:15px;
+                text-align: center;
+                i{
+                        text-align: center;
+                        line-height:60px;
+                        font-size:36px;
+                        color:#666;
+                }
+        }
+
+        h1,
+        h1 a{
+                font-family: Heebo-Regular;
+                font-size: 23px;
+                color: $primary900;
+                letter-spacing: 0;
+                line-height: 26px;
+                font-weight:400 !important;
+                margin:0;
+                padding-top:3px;
+        }
+        p{
+                margin:0;
+                /* Alles rondom uw acco: */
+                font-family: Heebo-Regular;
+                font-size: 13px;
+                color: #8DABC4;
+                letter-spacing: 0;
+                line-height: 19px;
+        }
+}

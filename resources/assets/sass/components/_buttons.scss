@@ -1,0 +1,34 @@
+a.btn-box{
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        padding:11px;
+        margin:11px;
+        text-decoration: none;
+        color:#333;
+        opacity:0.6;
+        transition: all 200ms;
+        span{
+                color:#333;
+                transition: all 200ms;
+        }
+        i{
+                font-size:18px;
+                line-height:22px;
+                display: block;
+                margin: 0;
+                top: 0;
+                transition: all 200ms;
+        }
+        &.active span,
+        &.active i,
+        &:hover span,
+        &:hover i,
+        &:hover,
+        &.active{
+                opacity:1 !important;
+                color: $primary !important;
+        }
+}

@@ -1,0 +1,57 @@
+
+.authentication{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#194c6e+0,3197d6+69,237ab3+100 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#194c6e+0,237ab3+100 */
+        background: #194c6e; /* Old browsers */
+        background: -moz-linear-gradient(top,  #194c6e 0%, #237ab3 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #194c6e 0%,#237ab3 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #194c6e 0%,#237ab3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#194c6e', endColorstr='#237ab3',GradientType=0 ); /* IE6-9 */
+
+}
+
+.loginscreen{
+        margin:0 auto;
+        width:350px;
+        margin-top:12%;
+        &.register{
+                margin-top:66px;
+        }
+}
+
+
+        .login_box{
+                .padding-content{padding: 40px 40px 20px;}
+                background:#fff;
+                border:1px solid $border-color;
+                margin:0 auto;
+                width:350px;
+
+                margin-top:44px;
+                border-radius:3px;
+                box-sizing:border-box;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+                .form-control{
+                        margin-bottom:22px;
+                }
+                button.btn{
+                        width:100%;
+                        text-align:center;
+                }
+                button.btn{margin-bottom:6px;}
+                a.btn{
+                        border:0 !important;
+                        width:100%;
+                        border-top:1px solid $border-color !important;
+                        background: $panel-bg !important;
+                        text-align: center !important;
+                }
+        }
+        .auth_logo{width:350px;
+                text-align: center;}
+.forgot-password{
+        width:100%;
+        text-align:center;
+        display:block;
+        margin-top:22px;
+}

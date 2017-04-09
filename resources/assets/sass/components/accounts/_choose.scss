@@ -1,0 +1,26 @@
+.account-row{
+        padding:22px;
+        border-bottom:1px solid $border-color;
+        display:flex;
+        transition: all 200ms;
+        .account-name{
+                span{
+                        font-weight:700;
+                        display: block;
+                        width:100%;
+                        i{ font-size:25px; padding-right:11px; line-height:22px; display:inline-block; font-weight: bold; opacity:0.5;}
+                }
+
+        }
+        .avatar-placeholder{
+                width:44px;
+                height:44px;
+                border-radius:44px;
+                margin-right:22px;
+                background:#eee;
+        }
+        &:hover{
+                background:$body-bg;
+                cursor: pointer;
+        }
+}

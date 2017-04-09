@@ -1,0 +1,74 @@
+aside#marketplace{
+        background: $panel-bg-light;
+        border-right:1px solid white;
+        header{
+                display:block;
+                width:100%;
+                background: white;
+                border-bottom:1px solid $table-border-color;
+                display:flex;
+                padding:11px 20px;
+                box-sizing:border-box;
+                h2{
+                        /* Filters: */
+                        font-weight:normal;
+                        font-size: 17px;
+                        letter-spacing: 0;
+                        line-height:44px;
+                        margin:0;
+                }
+                a{
+
+                        margin-left:auto;
+                }
+        }
+        .filter_item{
+                display:block;
+                width:100%;
+                background: white;
+                &:hover, &.active{
+                        background: none;
+                        cursor: pointer;
+                }
+                border-bottom:1px solid $table-border-color;
+                padding:20px 20px 20px 60px;
+                box-sizing:border-box;
+                position:relative;
+                .glyphicon-menu-hamburger,
+                a.deletemodifier{
+                        position:absolute;
+                        left:20px;
+                        top: calc(50% - 8px);
+                        color: $text-light;
+                        opacity:0.5;
+                        transition: all 0.2s ease;
+                        cursor: pointer;
+                        &:hover{
+                                opacity: 1;
+                        }
+                }
+                a.deletemodifier{
+                        left: auto;
+                        right:20px;
+                        display:none;
+                        span{
+                                color: $text-light;
+                        }
+                }
+                &:hover a.deletemodifier{
+                        display:inherit;
+                }
+                p.title{
+                        font-size: 15px;
+                        margin:0;
+                }
+                p.description{
+                        /* Alle producten lager: */
+                        font-family: Heebo-Regular;
+                        font-size: 13px;
+                        color: $text-light;
+                        line-height: 19px;
+                        margin:0;
+                }
+        }
+}

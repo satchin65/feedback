@@ -1,0 +1,175 @@
+// Input fields
+.form-control{
+        display:block;
+        width:100%;
+        margin-bottom:44px;
+        h3{
+                font-size: 18px;
+                padding-bottom: 20px;
+                border-bottom: solid 1px #ECECEC;
+                margin-bottom: 17px;
+                margin-top:0;
+                font-weight:300;
+                i{
+                        color:$primary;
+                        opacity:1;
+                        margin-right:11px;
+                        font-size:14px;
+                }
+        }
+
+        label{
+                width:180px;
+                display:inline-block;
+                margin-bottom:11px;
+        }
+        input{
+                width:100%;
+                max-width:350px;
+        }
+        .button-set{
+                margin-left:183px;
+        }
+
+}
+span.error{
+        display: block;
+        color:red;
+        font-size:12px;
+}
+
+input{
+        width: 100%;
+        padding: 6px 11px;
+        font-size: 14px;
+        margin-bottom:6px;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &.error{
+                border-color:red;
+        }
+        &.disabled{
+                background:#eee;
+                color:#ccc;
+        }
+}
+
+
+// Buttons and links
+.btn,
+button.btn,
+a.btn{
+        border:0;
+        padding:11px 33px;
+        line-height:22px;
+        font-size:12px;
+        text-transform: uppercase;
+        font-weight:600;
+        -webkit-box-sizing: border-box;
+        display: inline-block;
+        &.btn-small{
+                padding:6px 22px;
+                i{font-size:12px; opacity:0.5; margin-right:6px;}
+        }
+        border-radius: $button-border-radius;
+        transition: all 200ms;
+        cursor: pointer;
+        &.btn-primary, &.primary{
+                background: $primary;
+                color:#fff;
+                i{color:#fff;}
+                &:hover{ background: $primary-darken; }
+        }
+        &.btn-danger, &.danger{
+                background: $danger;
+                color:#fff;
+                i{color:#fff;}
+                &:hover{ background: $danger-darken; }
+        }
+        &.btn-secondary, &.secondary{
+                background: $secondary;
+                color:#fff;
+                i{color:#fff;}
+                &:hover{ background: $secondary-darken; }
+        }
+        &.btn-success, &.success{
+                background: $success;
+                color:#fff;
+                i{color:#fff;}
+                &:hover{ background: $success-darken; }
+        }
+        &.btn-gray, &.gray{
+                background: none ;
+                border:1px solid $border-color;
+                //i{color:#fff;}
+                &:hover{ background: $table-header; }
+        }
+        &.disabled,
+        &.disabled:hover{
+                cursor: default ;
+                background: #eee;
+                border:1px solid #ccc;
+        }
+        &.btn-small{
+                padding:6px 22px;
+        }
+        &.min-121{
+                min-width:121px;
+                max-width:121px;
+                text-align: center;
+        }
+}
+
+
+
+
+// Radio buttons & checkboxes
+.radio,
+.checkbox {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        label {
+                min-height: 22px; // Ensure the input doesn't jump when there is no text
+                padding-left: 20px;
+                margin-bottom: 0;
+                font-weight: normal;
+                cursor: pointer;
+        }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 6px;
+}
+
+select{
+        width:100% !important;
+        max-width: 350px;
+}
+.chosen-container-single .chosen-single {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        border: 1px solid #e6e9ed;
+        border-radius: 5px;
+        color: #444;
+        text-decoration: none;
+        white-space: nowrap;
+        line-height: 24px;
+        font-size: 14px;
+        height: initial;
+        padding: 4px 16px;
+        background: #FFF!important;
+        box-shadow: none!important;
+}

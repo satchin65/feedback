@@ -1,0 +1,70 @@
+@import "marketplaces/_sidebar";
+
+.toptabs{
+        color:#fff;
+        text-align: center;
+        border:1px solid #B7D2E5;
+        float: right;
+        border-radius:5px;
+        a{
+                padding:10px 22px;
+                display: inline-block;
+                font-family: Heebo-Regular;
+                font-size: 14px;
+                color: #8DABC4;
+                letter-spacing: 0;
+                &:hover{
+                        color: $primary800;
+                }
+                &.active{
+                        color: #8DABC4;
+                        background: $body-bg !important;
+                        &:hover{color: #8DABC4;}
+                }
+                &:first-child{
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                }
+                &:last-child{
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                }
+        }
+}
+
+
+#filtercontent{
+        select,
+        input{
+                width: 100% !important;
+                max-width: 250px !important;
+                margin-bottom:0;
+        }
+        a.btn.btn-small{
+                padding: 6px 22px;
+                line-height:16px;
+                height: 30px;
+        }
+
+}
+.addand{
+        margin:11px 0 11px 30px;
+}
+
+#filtercontainer{
+        .btn-primary{
+                margin-left: 10px !important;
+                margin-top:10px;
+                max-width:170px !important;
+        }
+}
+
+select.frequency{
+        max-width:185px;
+}
+select.frequency_hour,
+select.frequency_minute{
+        max-width:80px;
+}
+
+

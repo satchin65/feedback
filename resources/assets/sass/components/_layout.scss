@@ -1,0 +1,56 @@
+body{
+        min-height: 100vh;
+        background: $body-bg;
+}
+#app{
+        display: flex;
+        flex:1;
+        display: block;
+        width:100%;
+        min-height: 100vh;
+}
+
+.row{
+        display: block;
+        width:100%;
+}
+
+.container{
+        padding:0 22px;
+        &.maxed{
+                max-width: 1440px;
+        }
+}
+.flexrow {
+        display: flex;
+}
+
+#main{
+        display:flex;
+        padding-left:0px;
+        min-height: calc(100vh - 60px);
+        #sidebar{
+                flex:1;
+                width:200px;
+                max-width:200px;
+        }
+        #maincontent{
+                flex:1;
+                padding-bottom:60px;
+        }
+}
+
+.col2_left{
+        display:flex;
+        height: calc(100% - 89px);
+        aside{
+                flex:1;
+                width:25%;
+                max-width:350px;
+                min-width:200px;
+        }
+        .container{
+                flex:1;
+                width:75%;
+        }
+}

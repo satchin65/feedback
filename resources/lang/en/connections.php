@@ -1,0 +1,20 @@
+<?php
+return [
+    'Connections' => 'Connections',
+    'Add Connection' => 'Add Connection',
+    'of' => 'of',
+    'Total' => 'Total',
+    'Feed settings' => 'Feed settings',
+    'Mapping' => 'Mapping',
+    'Result' => 'Result',
+    'New connection' => 'New connection',
+    'Connection type' => 'Connection type',
+    'Save &amp; start import' => 'Save &amp; start import',
+    'Connection fields' => 'Connection fields',
+    'Feedstack field mapping' => 'Feedstack field mapping',
+    'Custom field' => 'Custom field',
+    'Settings' => 'Settings',
+    'Go to mapping' => 'Go to mapping',
+    'Reset mapping' => 'Reset mapping',
+    'Save mapping &amp; process products' => 'Save mapping &amp; process products',
+];
