@@ -1,0 +1,46 @@
+---
+engines:
+  phpcodesniffer:
+    enabled: true
+    config:
+      standard: "PSR2"
+  csslint:
+    enabled: false
+  scss-lint:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+      - python
+      - php
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    checks:
+      Naming/LongVariable:
+        enabled: false
+  rubocop:
+    enabled: false
+ratings:
+  paths:
+  - "**.css"
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+  - "**.rb"
+exclude_paths:
+- tests/*
+- public/build/*
+- public/js/*
+- public/css/*
+- resources/assets/css/*
+- resources/assets/js/*
